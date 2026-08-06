@@ -1,13 +1,13 @@
 if SHIELD_SYOSEI_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Syosei-L"
+    default "Syosei"
 
 endif
 
 if SHIELD_SYOSEI_RIGHT
 
 config ZMK_KEYBOARD_NAME
-    default "Syosei-R"
+    default "Syosei"
 
 endif
