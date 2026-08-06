@@ -1,1 +1,11 @@
-
+file_format: "1"
+id: syosei
+name: syosei
+type: shield
+url: https://github.com/<your-username>/zmk-config3
+requires: [seeeduino_xiao_ble]
+features:
+  - keys
+siblings:
+  - syosei_left
+  - syosei_right
