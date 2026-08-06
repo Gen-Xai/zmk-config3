@@ -2,6 +2,6 @@ include:
 - board: seeeduino_xiao_ble
     shield: syosei_left
     snippet: studio-rpc-usb-uart
-  - board: seeeduino_xiao_ble
+- board: seeeduino_xiao_ble
     shield: syosei_right
     snippet: studio-rpc-usb-uart
