@@ -1,1 +1,7 @@
+config SHIELD_SYOSEI_LEFT
+    def_bool y
+    depends on SHIELD_IS_SYOSEI_LEFT
 
+config SHIELD_SYOSEI_RIGHT
+    def_bool y
+    depends on SHIELD_IS_SYOSEI_RIGHT
