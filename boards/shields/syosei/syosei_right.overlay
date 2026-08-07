@@ -1,5 +1,7 @@
 #include "syosei.dtsi"
-
+&matrix_transform0 {
+    col-offset = <6>;
+};
 &kscan0 {
     row-gpios
         = <&xiao_d 0 GPIO_ACTIVE_HIGH>
