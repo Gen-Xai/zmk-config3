@@ -1,7 +1,11 @@
 include:
   - board: seeeduino_xiao_ble
     shield: syosei_left
-    snippet: studio-rpc-usb-uart
+    snippet:
+      - studio-rpc-usb-uart
+      - zmk-usb-logging
   - board: seeeduino_xiao_ble
     shield: syosei_right
-    snippet: studio-rpc-usb-uart
+    snippet:
+      - studio-rpc-usb-uart
+      - zmk-usb-logging
