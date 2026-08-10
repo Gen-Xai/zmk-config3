@@ -6,13 +6,13 @@
         sft_one_excl: sft_one_excl {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp 1>, <&kp !>;
+            bindings = <&kp N1>, <&kp EXCL>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         sft_two_qmark: sft_two_qmark {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp 2>, <&kp ?>;
+            bindings = <&kp N2>, <&kp QMARK>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
