@@ -2,16 +2,61 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    behaviors {
+        sft_one_excl: sft_one_excl {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp 1>, <&kp !>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        sft_two_qmark: sft_two_qmark {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp 2>, <&kp ?>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        saikaku {
             bindings = <
-&trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
-&trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
-&trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
-&trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
-&trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
+                &mo 1 &sft_one_excl &sft_two_qmark &kp N3 &kp N4 &kp N5 &kp ESC &kp Q &kp W &kp E
+                &kp R &kp T &kp TAB &kp A &kp S &kp D &kp F &kp G &kp LSFT &kp Z
+                &kp X &kp C &kp V &kp B &kp LCTRL &kp LGUI &kp PSCRN &kp LALT &kp INT5 &kp SPACE
+                &mo 1 &kp N0 &kp N9 &kp N8 &kp N7 &kp N6 &kp C_MUTE &kp P &kp O &kp I
+                &kp U &kp Y &kp C_VOL_UP &kp MINUS &kp L &kp K &kp J &kp H &kp C_VOL_DN &kp UP
+                &kp DOT &kp COMMA &kp M &kp N &kp RIGHT &kp DOWN &kp LEFT &kp RALT &kp INT4 &kp ENTER
+            >;
+        };
+        syouki {
+            bindings = <
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans &kp LALT &trans &kp BSPC
+                &trans &bt BT_SEL 0 &kp F3 &kp F2 &kp F1 &trans &bt BT_CLR &bt BT_SEL 1 &kp F6 &kp F5
+                &kp F4 &trans &kp C_BRI_UP &bt BT_SEL 2 &kp F9 &kp F8 &kp F7 &trans &kp C_BRI_DN &kp PG_UP
+                &kp F12 &kp F11 &kp F10 &trans &kp END &kp PG_DN &kp HOME &trans &kp LT &kp DEL
+            >;
+        };
+        gicho {
+            bindings = <
+&mo 3 &kp N1 &kp N2 &kp N3 &kp N4 &kp N5    &kp ESC &kp Q &kp U &kp F &kp L &kp MINUS
+&kp TAB &kp A &kp I &kp E &kp O &kp COMMA    &kp LSFT &kp Z &kp X &kp C &kp V &kp DOT
+&kp LCTRL &kp LGUI &kp PSCRN &kp LALT &kp INT5 &kp SPACE    &mo 3 &kp N0 &kp N9 &kp N8 &kp N7 &kp N6
+&kp C_VOL_UP &kp R &kp H &kp T &kp S &kp K    &kp C_VOL_DN &kp W &kp B &kp D &kp J &kp G
+&kp C_MUTE &kp UP &kp P &kp Y &kp M &kp N    &kp RIGHT &kp DOWN &kp LEFT &kp RALT &kp INT4 &kp ENTER
+            >;
+        };
+        rikunodo {
+            bindings = <
+                &mo 2 &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp BSPC
+                &mo 2 &trans &trans &trans &trans &trans &kp C_BRI_UP &trans &trans &trans
+                &trans &trans &kp C_BRI_DN &trans &trans &trans &trans &trans &trans &kp PG_UP
+                &trans &trans &trans &trans &kp END &kp PG_DN &kp HOME &trans &trans &kp DEL
             >;
         };
     };
