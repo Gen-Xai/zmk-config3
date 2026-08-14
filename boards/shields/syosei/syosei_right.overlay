@@ -2,6 +2,9 @@
 &matrix_transform0 {
     col-offset = <6>;
 };
+&uart0 {
+    status = "disabled";
+};
 &kscan0 {
     row-gpios
         = <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
