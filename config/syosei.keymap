@@ -27,7 +27,7 @@
 
         saikaku {
             bindings = <
-&kp FSLH  &kp N1  &kp NUMBER_2  &kp N3  &kp N4  &kp N5  &kp GRAVE  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp MINUS  &kp A  &kp S  &kp D  &kp F  &kp G  &kp EQUAL  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp LBKT  &kp RBKT  &kp BSLH  &kp SEMI  &kp SQT  &kp COMMA  &kp LBRC  &kp N0  &kp N9  &kp N8  &kp N7  &kp N6  &kp QMARK  &kp P  &kp O  &kp I  &kp U  &kp Y  &kp GT  &kp MINUS  &kp L  &kp K  &kp J  &kp H  &kp LT  &kp COLON  &kp DOT  &kp COMMA  &kp M  &kp N  &kp DQT  &kp PIPE  &kp RBRC  &kp PLUS  &kp UNDER  &kp TILDE
+&kp FSLH  &kp N1  &kp NUMBER_2  &kp N3  &kp N4  &kp N5  &kp A  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp MINUS  &kp A  &kp S  &kp D  &kp F  &kp G  &kp EQUAL  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp LBKT  &kp RBKT  &kp BSLH  &kp SEMI  &kp SQT  &kp COMMA  &kp LBRC  &kp N0  &kp N9  &kp N8  &kp N7  &kp N6  &kp QMARK  &kp P  &kp O  &kp I  &kp U  &kp Y  &kp GT  &kp MINUS  &kp L  &kp K  &kp J  &kp H  &kp LT  &kp COLON  &kp DOT  &kp COMMA  &kp M  &kp N  &kp DQT  &kp PIPE  &kp RBRC  &kp PLUS  &kp UNDER  &kp TILDE
             >;
         };
     };
